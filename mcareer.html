@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>HTML5 개인 포트폴리오 홈페이지</title>
+<!-- <link rel="stylesheet" type="text/css" href="index_css.css"/> -->
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=IBM+Plex+Sans+KR:wght@500&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+	.page{
+		background-color: white;
+		padding:5%;
+	}
+
+	.p{
+		font-family: 'Arvo', serif;
+		font-family: 'IBM Plex Sans KR', sans-serif;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: large;
+		text-align: center;
+	}
+	.pic{
+		width: 20%;
+		height: 20%;
+		margin-left: 39%;
+	}
+	.content{
+		background-color: white;
+	}
+	.media{
+		text-align: center;
+	}
+
+	.c{
+		margin-left: 5%;
+		font-family: 'Arvo', serif;
+		font-family: 'IBM Plex Sans KR', sans-serif;
+		font-family: 'Josefin Sans', sans-serif;
+	}
+</style>
+<body>
+	<div data-role="page" class="page">
+		<div class="tabs is-centered">
+			<ul>
+			  <li class="is-active"><a href="mcareer.html">Career</a></li>
+			  <li><a href="hobby.html">Hobby</a></li>
+			  <li><a href="history.html">History</a></li>
+			  <li><a href="index.html">Main</a></li>
+			</ul>
+		</div>
+		<br><br>
+		<div class="content">
+			<section class="section1">  
+				<!-- <img class="pic" src="uni2.png"><br><br>
+				<p class="p">2015 09 - 2019 02 국립정치대학 역사학과 입학</p><br><br> -->
+				<img class="pic" src="dit2.png"><br><br>
+				<p class="p">2021 02 동의과학대학 컴퓨터정보과 입학<br> 2023 02 졸업 예정<br> 2021 11 제 2회 창의혁신 캡스톤디자인 사이버 <br>경진대회 혁신상 수상<br> 2021 05 - 2021 07 AI 인공지능 교육 수료<br> 2022 교내 AI 코딩클럽 동아리장</p>
+				<br><br>
+				<p class="p"><strong>Programming Skills</strong><br></p>
+				<p class="c">Python</p>
+				<progress class="progress is-danger" value="65" max="100">90%</progress>
+				<p class="c">Java</p>
+				<progress class="progress is-warning" value="50" max="100">75%</progress>
+				<p class="c">JS</p>
+				<progress class="progress is-success" value="70" max="100">60%</progress>
+				<p class="c">HTML/CSS</p>
+				<progress class="progress is-info" value="80" max="100">45%</progress>
+				<p class="c">Php</p>
+				<progress class="progress is-link" value="40" max="100">30%</progress>
+			</section>
+			<hr>
+		</div><br>
+		<hr>
+		<!--프로젝트 소개-->
+		<div class="card">
+			<div class="card-image">
+			  <figure class="image is-4by3">
+				<img src="pro.jpg" alt="Placeholder image">
+			  </figure>
+			</div>
+			<div class="card-content">
+			  <div class="media">
+				<div class="media-left">
+				  <figure class="image is-48x48">
+					<img src="self.jpeg" alt="Placeholder image">
+				  </figure>
+				</div>
+				<div class="media-content">
+				  <p class="title is-4">ABC Project</p>
+				  <p class="subtitle is-6">할미와 감자 팀</p>
+				</div>
+			  </div>
+		  
+			  <div class="content">
+				 2학년이 되며 동아리에서 진행한 프로젝트 입니다.<br>오픈소스 Yolov5를 이용하여 실시간으로 모델을 인식하고 계산을 진행하는 인공지능 POS 프로젝트입니다
+				<br><br>
+				<time datetime="20"> 2022-07 - 2022 09</time>
+			  </div>
+			</div>
+		  </div>
+
+		<hr>
+		<!--댓글 남기기 기능-->
+		<article class="media">
+			<figure class="media-left">
+			  <p class="image is-64x64">
+				<img src="https://bulma.io/images/placeholders/128x128.png">
+			  </p>
+			</figure>
+			<div class="media-content">
+			  <div class="field">
+				<p class="control">
+				  <textarea class="textarea" placeholder="Add a comment..."></textarea>
+				</p>
+			  </div>
+			  <nav class="level">
+				<div class="level-left">
+				  <div class="level-item">
+					<a class="button is-info">Submit</a>
+				  </div>
+				</div>
+				<div class="level-right">
+				  <div class="level-item">
+					<label class="checkbox">
+					  <input type="checkbox"> Press enter to submit
+					</label>
+				  </div>
+				</div>
+			  </nav>
+			</div>
+		  </article>
+		<!--푸터 -->
+		<footer class="footer">
+			<div class="content has-text-centered">
+			  <p>
+				<strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+				<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+				is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>. <br>
+				and is also licensed by MIA
+			  </p>
+			</div>
+		  </footer>
+	</div>
+</body>
+</html>

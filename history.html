@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>HTML5 개인 포트폴리오 홈페이지</title>
+<!-- <link rel="stylesheet" type="text/css" href="index_css.css"/> -->
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=IBM+Plex+Sans+KR:wght@500&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+	.page{
+		background-color: white;
+		padding:3%;
+	}
+
+	p{
+		font-family: 'Arvo', serif;
+		font-family: 'IBM Plex Sans KR', sans-serif;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: large;
+	}
+
+
+	.media{
+		text-align: center;
+	}
+
+	.hero-body{
+		text-align: center;
+	}
+	.y{
+		width: 40%;
+		margin-left: 10%;
+	}
+	.o{
+		width: 40%;
+	}
+	.u{
+		width: 40%;
+		margin-left: 10%;
+	}
+	.n{
+		width: 40%;
+	}
+	.g{
+		width: 81%;
+		margin-left: 10%;
+	}
+</style>
+<body>
+	<div data-role="page" class="page">
+		<div class="tabs is-centered">
+			<ul>
+			  <li><a href="mcareer.html">Career</a></li>
+			  <li><a href="hobby.html">Hobby</a></li>
+			  <li class="is-active"><a href="history.html">History</a></li>
+			  <li><a href="index.html">Main</a></li>
+			</ul>
+		</div>
+	
+		<img src="young.jpg" class="y">
+		<img src="young2.jpg" class="o">
+		<img src="young3.jpg" class="u">
+		<img src="young4.jpg" class="n">
+		<img src="young5.jpg" class="g">
+
+		<hr>
+		<!--댓글 남기기 기능-->
+		<article class="media">
+			<figure class="media-left">
+			  <p class="image is-64x64">
+				<img src="https://bulma.io/images/placeholders/128x128.png">
+			  </p>
+			</figure>
+			<div class="media-content">
+			  <div class="field">
+				<p class="control">
+				  <textarea class="textarea" placeholder="뭐야 존나 귀여워..."></textarea>
+				</p>
+			  </div>
+			  <nav class="level">
+				<div class="level-left">
+				  <div class="level-item">
+					<a class="button is-info">Submit</a>
+				  </div>
+				</div>
+				<div class="level-right">
+				  <div class="level-item">
+					<label class="checkbox">
+					  <input type="checkbox"> Press enter to submit
+					</label>
+				  </div>
+				</div>
+			  </nav>
+			</div>
+		  </article>
+		<!--푸터 -->
+		<footer class="footer">
+			<div class="content has-text-centered">
+			  <p>
+				<strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+				<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+				is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>. <br>
+				and is also licensed by MIA
+			  </p>
+			</div>
+		  </footer>
+	</div>
+</body>
+</html>

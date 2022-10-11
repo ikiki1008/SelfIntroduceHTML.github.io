@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>HTML5 개인 포트폴리오 홈페이지</title>
+<!-- <link rel="stylesheet" type="text/css" href="index_css.css"/> -->
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=IBM+Plex+Sans+KR:wght@500&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+	.page{
+		background-color: white;
+		padding:3%;
+	}
+
+	p{
+		font-family: 'Arvo', serif;
+		font-family: 'IBM Plex Sans KR', sans-serif;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: large;
+	}
+
+	.portal{
+		width : 7%;
+ 		height: 7%; 
+	}
+
+	.sns{
+		text-align: center;
+	}
+
+	.media{
+		text-align: center;
+	}
+
+	.stu-pic{
+		text-align: center;
+		width: 40%;
+		margin-left: 30%;
+	}
+
+	.nav{
+		margin-left: 25%;
+	}
+
+	.hero-body{
+		text-align: center;
+	}
+</style>
+<body>
+	<div data-role="page" class="page">
+		<section class="hero is-success">
+			<div class="hero-body">
+			  <p>
+				@miayu1008 의 자기소개서
+			  </p>
+			</div>
+		</section>
+		<div class="tabs is-centered">
+			<ul>
+			  <li><a href="mcareer.html">Career</a></li>
+			  <li><a href="hobby.html">Hobby</a></li>
+			  <li><a href="history.html">History</a></li>
+			  <li class="is-active"><a href="index.html">Main</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<section class="section1">  
+				<!-- <figure class="image is-128x128" id="picture">
+					<img class="stu-pic" src="self.jpeg">
+				</figure> -->
+				<img class="stu-pic" src="self.jpeg">
+				<br><br>
+				<article class="message is-primary">
+					<div class="message-body">
+					 	<p>
+							<strong>NAME</strong> 오유경 <br>
+							<strong>BIRTHDAY</strong> 1996 - 10 - 08 <br>
+							<strong>CONTACT</strong> 010 - 8478 - 3159 <br>
+							<strong>ADDRESS</strong> 사하구 사하로 146 <br><br>
+							이것은 저의 자기소개서 입니다. 개소리 왈왈왈 멍멍멍 고양이는 야옹야옹 거미는 걺걺 기린은 기이이린
+						</p>
+					</div>
+				  </article>
+			</section>
+			<hr>
+			<aside class="sns">
+				<h3>SOCIAL MEDIAS</h3>
+				<a href="https://modern-lupin-06e.notion.site/25ad6185049247c9bebd4e53ac38e89d">
+					<img class="portal" src="profile.png" alt="이력서"/>
+				</a>
+				<a href="https://github.com/ikiki1008">
+					<img class="portal" src="github.png" alt="깃헙"/>
+				</a>
+				<a href="https://twitter.com/ikiki1008">
+					<img class="portal" src="twitter.png" alt="트위터"/>
+				</a>
+				<a href="https://www.instagram.com/miainyoureyes/">
+					<img class="portal" src="instagram.png" alt="인스타"/>
+				</a>
+			</aside>
+		</div>
+		<hr>
+		<!--댓글 남기기 기능-->
+		<article class="media">
+			<figure class="media-left">
+			  <p class="image is-64x64">
+				<img src="https://bulma.io/images/placeholders/128x128.png">
+			  </p>
+			</figure>
+			<div class="media-content">
+			  <div class="field">
+				<p class="control">
+				  <textarea class="textarea" placeholder="Add a comment..."></textarea>
+				</p>
+			  </div>
+			  <nav class="level">
+				<div class="level-left">
+				  <div class="level-item">
+					<a class="button is-info">Submit</a>
+				  </div>
+				</div>
+				<div class="level-right">
+				  <div class="level-item">
+					<label class="checkbox">
+					  <input type="checkbox"> Press enter to submit
+					</label>
+				  </div>
+				</div>
+			  </nav>
+			</div>
+		  </article>
+		<!--푸터 -->
+		<footer class="footer">
+			<div class="content has-text-centered">
+			  <p>
+				<strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+				<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+				is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>. <br>
+				and is also licensed by MIA
+			  </p>
+			</div>
+		  </footer>
+	</div>
+</body>
+</html>
